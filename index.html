@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+
+
+</head>
+
+<body>
+    <h1 class="title">SORTING VISUALIZER</h1>
+    <div class="split_left">
+        <div id="info">
+            <h1>Sorting</h1>
+            <h5>Sorting is the process of arranging items or data in particular order. It is a fundamental operation in
+                computer science
+                and is used to organize data for efficient retrieval and manipulation. There are various sorting
+                algorithms, each with
+                its own advantages and disadvantages in terms of time complexity,space complexity, and stability.</h5>
+            <h5>Here are some commonly used sorting algorithms:</h5>
+            <h5>1.Bubblesort 2.Selection Sort 3.Insertion Sort 4.Merge Sort 5.Quicksort 6.Heapsort</h5>
+            <h5>
+                These are just a few examples of sorting algorithms, and there are many more variations and
+                optimizations available. The choice of sorting algorithm depends on factors such as the size of the
+                data, the desired time complexity, and the characteristics of the data to be sorted.</h5>
+        </div>
+    </div>
+
+
+    <div class="split right">
+        <div class="container">
+            <!-- <div class="title">SORTING VISUALIZER</div> -->
+            <div id="array-container">
+                <div id="array"></div>
+                <h5 id="no-algo-warning" class="display-none">No Algorithm Selected!</h5>
+            </div>
+            <div id="algo-container">
+                <button class="algo-btn">Bubble Sort</button>
+                <button class="algo-btn">Selection Sort</button>
+                <button class="algo-btn">Insertion Sort</button>
+                <button class="algo-btn">Merge Sort</button>
+                <button class="algo-btn">Quicksort</button>
+                <button class="algo-btn">Heapsort</button>
+                <button id="sort">Start</button>
+
+            </div>
+            <div id="change-container">
+                <button id="randomize">Randomize</button>
+
+
+
+                <div id="sliders">
+                    <div class="slider-container">
+                        <label>Array Size</label>
+                        <input type="range" id="size-slider" class="slider" autocomplete="off">
+                    </div>
+                    <div class="slider-container">
+                        <label>Speed</label>
+                        <input type="range" id="speed-slider" class="slider" autocomplete="off">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="assets/script.js"></script>
+    <script src="assets/bubble-sort.js"></script>
+    <script src="assets/selection-sort.js"></script>
+    <script src="assets/insertion-sort.js"></script>
+    <script src="assets/merge-sort.js"></script>
+    <script src="assets/quicksort.js"></script>
+    <script src="assets/heapsort.js"></script>
+</body>
+
+</html>
